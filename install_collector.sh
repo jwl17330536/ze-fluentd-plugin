@@ -444,7 +444,7 @@ function main() {
         log info "Flavor of package: ${FLAVOR_STR} and code name: ${CODE_NAME} detected"
         
         log info "Installing log collector from https://toolbelt.treasuredata.com/sh/install-${FLAVOR_STR}-${CODE_NAME}-fluent-package5.sh" 
-        download_and_run_installer https://toolbelt.treasuredata.com/sh/install-${FLAVOR_STR}-${CODE_NAME}-fluent-package5.sh
+        download_and_run_installer https://toolbelt.treasuredata.com/sh/install-${FLAVOR_STR}-${CODE_NAME}-td-agent4.sh
     else
         err_exit info "Your OS or distribution is not supported by this install script."
     fi
